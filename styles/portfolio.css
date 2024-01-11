@@ -8,7 +8,7 @@
 .header {
   background: #f9f7fe;
   text-align: center;
-padding: 160px 20px;
+  padding: 160px 20px;
 }
 
 .header h1 {
@@ -54,7 +54,6 @@ p {
   line-height: normal;
 }
 
-
 .project-description h2 {
   color: #000;
   font-size: 56px;
@@ -71,7 +70,7 @@ p {
   line-height: normal;
 }
 
- .project-description .btn-branding-outline {
+.project-description .btn-branding-outline {
   color: var(--branding-color);
   border: 1px solid var(--branding-color);
   border-radius: 4px;
@@ -80,18 +79,57 @@ p {
   padding: 15px 30px;
 }
 
+.about-section {
+  padding: 160px 20px;
+}
 
-@media (max-width: 960px ){
-  .header{
-        padding: 80px 20px;
+.about-section-content {
+  margin: 30px;
+}
+.about-section h1 {
+  font-family: var(--main-font-family);
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.about-section h2 {
+  color: #272142;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.about-section .btn-branding {
+  border-radius: 4px;
+  background: var(--branding-color);
+  color: #ffff;
+  font-family: var(--secondary-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 80px 20px;
   }
-  .header h1{
+  .header  h1 {
     font-size: 44px;
     line-height: 2;
-
   }
-  .project-description{
+  .project-description {
     padding: 0;
     text-align: center;
+  }
+  .about-section {
+    text-align: center;
+    padding: 0;
+}
+.about-section h1 {
+    font-size: 54px;
+
   }
 }
