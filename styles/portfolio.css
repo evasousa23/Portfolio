@@ -5,67 +5,74 @@
   --secondary-color: #f9f7fe;
 }
 
-nav{
-  padding: 20px 0;
-}
-nav ul{
+nav,
+nav ul {
   padding: 0;
   margin: 0;
 }
-nav li{
+
+nav li {
   display: inline;
   list-style: none;
   line-height: 42px;
   margin-left: 15px;
 }
-nav a{
+
+nav a {
   color: #272142;
   font-family: var(--secondary-font-family);
   text-decoration: none;
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover, nav li.active a{
+nav a:hover,
+nav li.active a {
   color: var(--branding-color);
 }
 
 .logo {
-    max-height: 40px;
+  max-height: 40px;
 }
+
 .header {
-  background: #f9f7fe;
+  background: var(--secondary-color);
   text-align: center;
   padding: 160px 20px;
 }
 
+.header h1,
+.header p,
+.header h2,
+.header .btn-branding {
+  font-family: var(--main-font-family);
+}
+
 .header h1 {
   color: #000;
-  font-family: var(--main-font-family);
   font-weight: 700;
-  margin: 0;
   font-size: 96px;
   line-height: 1.5;
 }
 
-.header p {
-  font-family: var(--secondary-font-family);
+.header p,
+.header h2 {
   font-size: 36px;
   color: #272142;
   font-weight: 700;
 }
 
 .header h2 {
-  color: #272142;
-  font-family: var(--secondary-font-family);
   font-size: 24px;
   font-weight: 400;
   line-height: 2;
 }
 
-.header .btn-branding {
+.header .btn-branding,
+.content-container .btn-branding,
+footer .btn-branding {
   border-radius: 4px;
   background: var(--branding-color);
-  color: #ffff;
+  color: #fff;
   font-family: var(--secondary-font-family);
   font-size: 18px;
   font-weight: 500;
@@ -81,18 +88,22 @@ p {
   line-height: normal;
 }
 
+.project-description h2,
+.project-description p {
+  font-family: var(--main-font-family);
+}
+
 .project-description h2 {
   color: #000;
   font-size: 56px;
-  font-family: var(--main-font-family);
   font-weight: 700;
   line-height: normal;
 }
 
-.project-description p {
+.project-description p,
+.content p {
   font-size: 18px;
   font-weight: 400;
-  font-family: var(--secondary-font-family);
   color: #272142;
   line-height: normal;
 }
@@ -106,55 +117,90 @@ p {
   padding: 15px 30px;
 }
 
-.content-container {
+.project-description .btn-branding-outline:hover {
+  color: #000;
+  border: 1px solid var(--branding-color);
+}
+
+.content-container,
+.content {
   padding: 160px 20px;
 }
 
 .content {
   margin: 30px;
 }
-.content h1 {
+
+.content h1,
+.content h2,
+.content h3 {
   font-family: var(--main-font-family);
+}
+
+.content h1 {
   font-size: 64px;
   line-height: 80px;
 }
 
 .content h2 {
   color: #272142;
-  font-family: var(--secondary-font-family);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
-}
-.content h3 {
-  font-family: var(--secondary-font-family);
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.5;
-  
-}
-.content p{
-  font-size: 14px;
-  font-family: var(--secondary-font-family);
 }
 
-/* .content img{
-  display:block;
-    width:  600px;
-    height: 600px;
-  }
-*/
-.content-container .btn-branding {
-  border-radius: 4px;
-  background: var(--branding-color);
-  color: #ffff;
-  font-family: var(--secondary-font-family);
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 27px;
-  padding: 15px 30px;
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
 }
+
+.content p {
+  font-size: 14px;
+}
+
+footer {
+  margin: 60px 0;
+}
+footer h4{
+  font-size: 48px;
+}
+footer .contact-box{
+  background-color: var(--secondary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+
+}
+footer .contact-box p{
+margin: 0;
+
+}
+
+footer .email-link {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: #fff;
+  background-color: var(--branding-color);
+}
+
 
 @media (max-width: 900px) {
   .header {
@@ -175,4 +221,7 @@ p {
   .content h1 {
     font-size: 54px;
   }
+
+
+
 }
